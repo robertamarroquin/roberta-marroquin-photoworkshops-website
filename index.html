@@ -437,6 +437,8 @@
 
   @media (max-width: 768px) {
     .ws-grid{ grid-template-columns:1fr !important; }
+    .hero-scroll-label{ display:none; }
+    .cta-heading{ margin-bottom:28px !important; }
   }
 </style>
 </head>
@@ -463,8 +465,8 @@
       <img src="assets/6513d72f-3a69-47cd-b472-298a20a7e6df.png" alt="Roberta Marroquín" style="display: block; width: min(460px,62vw); height: auto; margin: 0; position: relative;">
       <p style="margin: clamp(16px,2.2vh,24px) 0 0; font-family: 'Jost',sans-serif; font-weight: 300; color: rgba(255,255,255,.92); font-size: clamp(18px,1.7vw,28px); line-height: 1.4; letter-spacing: .01em; position: relative;">Photography expeditions for those<br>who want to see more deeply.</p>
     </div>
-    <a href="#experience" style="position:absolute; bottom:clamp(22px,3vh,34px); left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:9px; text-decoration:none;">
-      <span style="font-family: 'Jost',sans-serif; font-size: 12px; letter-spacing: .42em; text-transform: uppercase; color: rgba(255,255,255,.65)">Scroll</span>
+    <a href="#experience" class="hero-scroll" style="position:absolute; bottom:clamp(22px,3vh,34px); left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:9px; text-decoration:none;">
+      <span class="hero-scroll-label" style="font-family: 'Jost',sans-serif; font-size: 12px; letter-spacing: .42em; text-transform: uppercase; color: rgba(255,255,255,.65)">Scroll</span>
       <span style="display:block; width:1px; height:40px; background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,0)); animation:rmBob 2.4s ease-in-out infinite;"></span>
     </a>
   </section>
@@ -601,8 +603,8 @@
 
   <section id="contact" style="scroll-margin-top:80px; background:#00020f; color:#fff; padding:clamp(64px,11vh,140px) clamp(22px,7vw,120px);">
     <div style="max-width: 880px; margin: 0 auto; text-align: center; color: #ffffff">
-      <div style="font-family:'Jost',sans-serif; font-size:12px; letter-spacing:.34em; text-transform:uppercase; color:rgba(255,255,255,.55); margin-bottom:clamp(26px,3.4vh,38px);"><b style="color: #ffffffa6; font-size: 20px">Are you ready to see differently?</b></div>
-      <h2 style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(32px,5vw,72px); line-height:1.08; letter-spacing:-.012em; color:#fff; text-wrap:balance;">If this resonates, I would love to hear from you.</h2>
+      <div style="font-family:'Jost',sans-serif; font-size:12px; letter-spacing:.34em; text-transform:uppercase; color:rgba(255,255,255,.55); margin-bottom:clamp(26px,3.4vh,38px);"><b style="color: #ffffffa6; font-size: 20px">Are you ready to see through a different lens?</b></div>
+      <h2 class="cta-heading" style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:600; font-size:clamp(32px,5vw,72px); line-height:1.08; letter-spacing:-.012em; color:#fff; text-wrap:balance;">If this resonates, I would love to hear from you.</h2>
       <p style="margin: clamp(26px,3.4vh,40px) auto 0; max-width: 48ch; font-family: 'Jost',sans-serif; font-weight: 300; font-size: clamp(16px,1.3vw,19px); line-height: 1.8; color: #ffffff">Each expedition is limited to eight photographers — twelve in Botswana. Tell me a little about yourself and where you would like to go, and we will begin a conversation.</p>
 
       <form id="rm-contact-form" style="margin: clamp(40px,5.5vh,64px) auto 0; max-width: 540px; display: flex; align-items: center; gap: 18px; border-bottom: 1px solid rgba(255,255,255,.28); padding-bottom: 14px; color: #ffffff; font-size: 18px">
