@@ -437,12 +437,16 @@
     .rm-nav .nav-links a{ font-size:11px; }
   }
 
+  .itin-cover{ display:none; width:100%; height:auto; }
+
   @media (max-width: 768px) {
     .ws-grid{ grid-template-columns:1fr !important; }
     .hero-scroll-label{ display:none; }
     .cta-heading{ margin-bottom:28px !important; }
-    .itin-frame-wrap{ overflow:hidden; height:clamp(420px,70vh,820px); }
-    .itin-frame-wrap iframe{ width:200% !important; height:200% !important; transform:scale(.5); transform-origin:top left; }
+    .itin-frame-wrap{ height:auto; }
+    .itin-frame-wrap iframe{ display:none; }
+    .itin-frame-wrap .itin-loading{ display:none; }
+    .itin-cover{ display:block; }
   }
 </style>
 </head>
@@ -593,6 +597,7 @@
         <div class="itin-frame-wrap" style="position:relative;">
           <div class="itin-loading" aria-hidden="true" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Jost',sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:rgba(0,2,15,.4); background:#f7f7f5; border:1px solid rgba(0,2,15,.12);">Loading itinerary…</div>
           <iframe data-pdf-src="assets/itinerary-tanzania.pdf" title="Tanzania itinerary" style="position:relative; width:100%; height:clamp(420px,70vh,820px); border:1px solid rgba(0,2,15,.12); display:block; background:transparent;"></iframe>
+          <img class="itin-cover" src="assets/itinerary-tanzania-cover.jpg" alt="Tanzania itinerary cover" loading="lazy" style="border:1px solid rgba(0,2,15,.12);">
         </div>
         <p style="margin:clamp(16px,2vh,22px) 0 0;"><a href="assets/itinerary-tanzania.pdf" target="_blank" rel="noopener" class="hover-fade" style="font-family:'Jost',sans-serif; font-size:14px; letter-spacing:.04em; color:rgba(0,2,15,.6); text-decoration:none; border-bottom:1px solid rgba(0,2,15,.25); padding-bottom:2px;">Open the itinerary directly →</a></p>
         <p style="margin:clamp(22px,3vh,30px) 0 0; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:500; font-size:clamp(18px,1.6vw,22px); color:#00020f;">Ready to reserve your spot? <a href="#contact" style="color:#00020f; text-decoration:underline;">Begin here →</a></p>
@@ -606,6 +611,7 @@
         <div class="itin-frame-wrap" style="position:relative;">
           <div class="itin-loading" aria-hidden="true" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Jost',sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:rgba(0,2,15,.4); background:#f7f7f5; border:1px solid rgba(0,2,15,.12);">Loading itinerary…</div>
           <iframe data-pdf-src="assets/itinerary-botswana.pdf" title="Botswana itinerary" style="position:relative; width:100%; height:clamp(420px,70vh,820px); border:1px solid rgba(0,2,15,.12); display:block; background:transparent;"></iframe>
+          <img class="itin-cover" src="assets/itinerary-botswana-cover.jpg" alt="Botswana itinerary cover" loading="lazy" style="border:1px solid rgba(0,2,15,.12);">
         </div>
         <p style="margin:clamp(16px,2vh,22px) 0 0;"><a href="assets/itinerary-botswana.pdf" target="_blank" rel="noopener" class="hover-fade" style="font-family:'Jost',sans-serif; font-size:14px; letter-spacing:.04em; color:rgba(0,2,15,.6); text-decoration:none; border-bottom:1px solid rgba(0,2,15,.25); padding-bottom:2px;">Open the itinerary directly →</a></p>
         <p style="margin:clamp(22px,3vh,30px) 0 0; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:500; font-size:clamp(18px,1.6vw,22px); color:#00020f;">Ready to reserve your spot? <a href="#contact" style="color:#00020f; text-decoration:underline;">Begin here →</a></p>
@@ -627,6 +633,7 @@
           <div class="itin-frame-wrap" style="position:relative;">
             <div class="itin-loading" aria-hidden="true" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Jost',sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:rgba(0,2,15,.4); background:#f7f7f5; border:1px solid rgba(0,2,15,.12);">Loading itinerary…</div>
             <iframe data-pdf-src="assets/itinerary-bhutan-oct.pdf" title="Bhutan itinerary — October 2026" style="position:relative; width:100%; height:clamp(420px,70vh,820px); border:1px solid rgba(0,2,15,.12); display:block; background:transparent;"></iframe>
+            <img class="itin-cover" src="assets/itinerary-bhutan-oct-cover.jpg" alt="Bhutan itinerary cover — October 2026" loading="lazy" style="border:1px solid rgba(0,2,15,.12);">
           </div>
           <p style="margin:clamp(16px,2vh,22px) 0 0;"><a href="assets/itinerary-bhutan-oct.pdf" target="_blank" rel="noopener" class="hover-fade" style="font-family:'Jost',sans-serif; font-size:14px; letter-spacing:.04em; color:rgba(0,2,15,.6); text-decoration:none; border-bottom:1px solid rgba(0,2,15,.25); padding-bottom:2px;">Open the itinerary directly →</a></p>
         </div>
@@ -636,6 +643,7 @@
           <div class="itin-frame-wrap" style="position:relative;">
             <div class="itin-loading" aria-hidden="true" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Jost',sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:rgba(0,2,15,.4); background:#f7f7f5; border:1px solid rgba(0,2,15,.12);">Loading itinerary…</div>
             <iframe data-pdf-src="assets/itinerary-bhutan-dec.pdf" title="Bhutan itinerary — December 2026" style="position:relative; width:100%; height:clamp(420px,70vh,820px); border:1px solid rgba(0,2,15,.12); display:block; background:transparent;"></iframe>
+            <img class="itin-cover" src="assets/itinerary-bhutan-dec-cover.jpg" alt="Bhutan itinerary cover — December 2026" loading="lazy" style="border:1px solid rgba(0,2,15,.12);">
           </div>
           <p style="margin:clamp(16px,2vh,22px) 0 0;"><a href="assets/itinerary-bhutan-dec.pdf" target="_blank" rel="noopener" class="hover-fade" style="font-family:'Jost',sans-serif; font-size:14px; letter-spacing:.04em; color:rgba(0,2,15,.6); text-decoration:none; border-bottom:1px solid rgba(0,2,15,.25); padding-bottom:2px;">Open the itinerary directly →</a></p>
         </div>
@@ -651,6 +659,7 @@
         <div class="itin-frame-wrap" style="position:relative;">
           <div class="itin-loading" aria-hidden="true" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'Jost',sans-serif; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:rgba(0,2,15,.4); background:#f7f7f5; border:1px solid rgba(0,2,15,.12);">Loading itinerary…</div>
           <iframe data-pdf-src="assets/itinerary-colombia.pdf" title="Colombia itinerary" style="position:relative; width:100%; height:clamp(420px,70vh,820px); border:1px solid rgba(0,2,15,.12); display:block; background:transparent;"></iframe>
+          <img class="itin-cover" src="assets/itinerary-colombia-cover.jpg" alt="Colombia itinerary cover" loading="lazy" style="border:1px solid rgba(0,2,15,.12);">
         </div>
         <p style="margin:clamp(16px,2vh,22px) 0 0;"><a href="assets/itinerary-colombia.pdf" target="_blank" rel="noopener" class="hover-fade" style="font-family:'Jost',sans-serif; font-size:14px; letter-spacing:.04em; color:rgba(0,2,15,.6); text-decoration:none; border-bottom:1px solid rgba(0,2,15,.25); padding-bottom:2px;">Open the itinerary directly →</a></p>
         <p style="margin:clamp(22px,3vh,30px) 0 0; font-family:'Cormorant Garamond',serif; font-style:italic; font-weight:500; font-size:clamp(18px,1.6vw,22px); color:#00020f;">Ready to reserve your spot? <a href="#contact" style="color:#00020f; text-decoration:underline;">Begin here →</a></p>
